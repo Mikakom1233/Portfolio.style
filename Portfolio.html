@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="Logo">Accueil</a>
+      <div class="nav-links" >
+        <ul>
+          <li class="active"><a href="file:///C:/Users/MVOMO/Desktop/Portfolio/Propos.html">A propos</a></li>
+          <li><a href="file:///C:/Users/MVOMO/Desktop/Portfolio/travail.html">Travail</a></li>
+          <li><a href="file:///C:/Users/MVOMO/Desktop/Portfolio/Cv.html">CV</a></li>
+          <li><a href="file:///C:/Users/MVOMO/Desktop/Portfolio/Telephone.html">Contact</a></li>
+        </ul>
+      </div>
+      <img src="Menu bout.png" alt="Menu bout" class="Menu-bout" />
+    </nav>
+    <header>
+    </header>
+  </body>
+  <script>
+    const MenuBout = document.querySelector(".Menu-bout")
+    const navLinks = document.querySelector(".nav-links")
+
+    MenuBout.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu');
+    })
+  </script>
+  <footer>
+    <div class="Formulaire">
+     <Form>
+        <label>Nom :</label>
+        <input type="text" name="first name" placeholder="Tapez votre nom ici" />
+          <br />
+        <label>Email:</label>
+        <input type="email" name="first email" placeholder="Tapez votre email ici" />
+        <br />
+        <input type="submit" value="envoyer" />
+     </Form>
+    </div> 
+  </footer>
+</html>
